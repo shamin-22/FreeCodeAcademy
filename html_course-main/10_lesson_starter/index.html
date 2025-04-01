@@ -6,13 +6,13 @@
     <meta name="author" content="Ahmed Shamin" />
     <title>The Little Taco Shop</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="main.css" type="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header>
       <h1>The Little Taco Shop</h1>
-      <nav>
+      <nav aria-label="Main Navigation">
         <ul>
           <li>
             <a href="#about"
@@ -43,7 +43,83 @@
       </figure>
     </header>
     <main>
-      <!-- our content-->
+      <article id="about">
+        <hr />
+        <h2>About LTS</h2>
+        <p>
+          <abbr title="The Little Taco Shop">LTS</abbr> was founded in
+          <time datetime="2022">2022</time>. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Dolore consequuntur nihil repellendus
+          perferendis corporis culpa ipsum, maxime quas eum suscipit tempore quo
+          minima animi impedit sunt est esse fugiat soluta!
+        </p>
+        <aside>
+          <h3>Taco Trivia</h3>
+          <details>
+            <summary>When did tacos first appear in the United States?</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, blanditiis provident. Perspiciatis tempore
+              cupiditate, provident iusto dignissimos veniam delectus, est
+              facilis blanditiis soluta maxime voluptas eaque optio hic saepe
+              sapiente.
+            </p>
+          </details>
+        </aside>
+      </article>
+      <hr />
+      <article id="menu">
+        <h2>Our Menu</h2>
+        <table>
+          <caption>
+            Our Tacos
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Tacos</th>
+              <th scope="col"><abbr title="Quantity">QTY</abbr></th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" rowspan="3">Crunchy</th>
+              <td>1</td>
+              <td>$1.50</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>$2.50</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>$3.25</td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="3">Soft</th>
+              <td>1</td>
+              <td>$1.50</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>$3.50</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>$4.50</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Chips and Salsa $2</td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+
+      <p>
+        <a href="#">Back to top</a>
+      </p>
     </main>
     <hr />
     <footer>
